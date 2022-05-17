@@ -1,13 +1,7 @@
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <div>
-      <link rel="manifest" href="/manifest.json" />
-
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
