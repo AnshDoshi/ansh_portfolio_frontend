@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.6",
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -21,6 +20,8 @@
     "babel-plugin-inline-react-svg": "^2.0.1",
     "formik": "^2.2.9",
     "http-proxy-middleware": "^2.0.6",
+    "next": "12.1.6",
+    "next-pwa": "^5.5.2",
     "overlay-navbar": "^1.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",

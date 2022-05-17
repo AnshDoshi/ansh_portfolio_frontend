@@ -32,6 +32,7 @@ function App() {
           
         </div>
       )} */}
+      <link rel="manifest" href="/manifest.json" />
       <Navbar />
       <Intro />
       {/* <Meta /> */}

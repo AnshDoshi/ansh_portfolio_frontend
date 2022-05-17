@@ -112,7 +112,7 @@ const About = () => {
                 </div>
               </li>
               <li className="py-2">
-                <a href="/a_cv.pdf" target="_blank">
+                <a href="/resumee.pdf" target="_blank">
                   <Button title={abouts.btn_name} type="submit" />
                 </a>
               </li>
