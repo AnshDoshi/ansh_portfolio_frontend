@@ -1,0 +1,12 @@
+.container{
+     
+  @apply relative group overflow-hidden px-8 h-12 rounded-md bg-lime-500
+  before:absolute 
+  before:inset-0 
+  before:bg-lime-600 
+  before:scale-y-[0.1] 
+  before:origin-bottom
+  before:transition
+  before:duration-300
+  hover:before:scale-y-100
+}

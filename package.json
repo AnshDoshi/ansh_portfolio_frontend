@@ -10,11 +10,36 @@
   },
   "dependencies": {
     "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "@emailjs/browser": "^3.6.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "@mui/material": "^5.6.1",
+    "@reduxjs/toolkit": "^1.8.1",
+    "axios": "^0.27.2",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "formik": "^2.2.9",
+    "http-proxy-middleware": "^2.0.6",
+    "overlay-navbar": "^1.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-pdf": "^5.7.2",
+    "react-redux": "^7.2.8",
+    "react-rotating-text": "^1.4.1",
+    "react-router-dom": "^6.3.0",
+    "react-scroll": "^1.8.7",
+    "react-spinners": "^0.11.0",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.1.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
-    "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
+    "autoprefixer": "^10.4.4",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
   }
 }

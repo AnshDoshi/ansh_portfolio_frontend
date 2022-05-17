@@ -1,0 +1,35 @@
+.nav_main{
+    @apply  top-0 fixed z-20 bg-transparent w-full transform duration-500
+}
+.nav_after{
+    @apply bg-gray-50 top-0 fixed z-20 w-full transform duration-500 shadow-xl
+}
+
+.nav_second{
+    @apply w-full
+}
+.nav_third{
+    @apply flex items-center h-20 w-full
+}
+.nav_forth{
+    @apply flex items-center  sm:mx-10 md:mx-20 justify-between w-full
+}
+
+.nav_fifth{
+    @apply flex justify-center items-center flex-shrink-0
+}
+
+.nav_name{
+    @apply font-bold text-4xl cursor-pointer ml-7
+}
+.nav_name_dot{
+    @apply text-blue-500
+}
+
+.nav_menu{
+    @apply hidden md:block
+}
+
+.nav_link{
+    @apply ml-10 flex items-baseline space-x-4
+}

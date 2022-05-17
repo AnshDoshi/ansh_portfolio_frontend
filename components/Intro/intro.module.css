@@ -1,0 +1,66 @@
+.intro{
+    background-image: url('https://res.cloudinary.com/dhoozs5nu/image/upload/v1651648870/ansh/nature_zt7uaf.jpg');
+    @apply flex h-screen bg-cover bg-fixed m-auto flex-col gap-6 items-center justify-center
+}
+
+
+
+.i_name{
+    @apply flex flex-col gap-4 z-10
+}
+.i_name>:nth-child(1){
+ 
+    @apply text-black font-bold text-4xl
+}
+.i_name>:nth-child(2){
+    @apply text-black font-semibold text-5xl
+}
+.i_name>:nth-child(3){
+    @apply text-gray-600 mt-4 text-2xl
+}
+
+
+.i_right{
+    @apply flex flex-1 relative
+}
+
+.i_right>*{
+    @apply absolute z-10
+}
+
+.i_right>:nth-child(1){
+    @apply scale-75 -left-14 -top-9
+}
+
+.i_right>:nth-child(2){
+    @apply -top-16 scale-75 -left-12
+}
+.i_right>:nth-child(3){
+    @apply -top-16 scale-75 -left-12
+}
+
+.floatdiv{
+    @apply -top-4 left-60
+}
+
+.blur{
+    @apply absolute max-w-xs h-56 rounded-3xl bg-slate-300 -z-10 -top-16 left-52 blur-sm
+}
+
+
+
+  .react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
+   
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,16 @@
+.project_item {
+    @apply w-full h-96 overflow-hidden rounded-xl inline-block  border-4 border-solid border-red-500
+}
+.project_item img{
+    @apply h-full
+}
+.info{
+    @apply mt-4 bg-red-800 p-4 rounded-xl
+}
+.title{
+    @apply text-3xl
+}
+
+.desc{
+    @apply text-xl mt-4
+}
