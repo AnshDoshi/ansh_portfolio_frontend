@@ -1,0 +1,40 @@
+// => Mouting
+
+// 1. Constroctor(call once)
+// -> Analytics
+// -> base on props set state value
+// -> bind
+
+// 2. getDerivedStateFromProps
+// -> dereive new state value base on props or state
+
+// 3. Render
+// -> insert html into DOM
+
+// 4. ComponentDidMount
+// ->  Load data on component Mount
+// -> register event
+// -> manipulate dom
+
+// => Updating
+
+// 1. getDerivedStateFromProps
+// -> dereive new state value base on props or state
+
+// 2. shouldComponentUpdate
+
+// 3. render
+
+// 4. getSnapshotBeforeUpdate
+
+// 5. ComponentDidUpdate
+
+// => UnMounting
+
+// 1. ComponentWillUnmout
+
+// => Error Handling
+
+// 1. getDerivedStateFromError
+
+// 2. componentDidCatch
