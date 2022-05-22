@@ -1,4 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Button from "../Button";
@@ -120,6 +121,7 @@ export const Contact = () => {
                     id="name"
                     type="text"
                     placeholder="Bruce"
+                    for="name"
                   />
                   <ErrorMessage
                     name="name"
@@ -129,7 +131,10 @@ export const Contact = () => {
                   />
                 </div>
                 <div className="w-full md:w-1/2 px-3">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    htmlFor="number"
+                  >
                     Number
                   </label>
                   <Field
@@ -138,6 +143,7 @@ export const Contact = () => {
                     id="number"
                     type="text"
                     placeholder="Contact Number"
+                    for="number"
                   />
                   <ErrorMessage
                     name="number"
@@ -149,7 +155,10 @@ export const Contact = () => {
               </div>
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    htmlFor="email"
+                  >
                     E-mail
                   </label>
                   <Field
@@ -158,6 +167,7 @@ export const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="brucewayne@gmail.com"
+                    for="email"
                   />
                   <ErrorMessage
                     name="email"
@@ -169,7 +179,10 @@ export const Contact = () => {
               </div>
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    htmlFor="messages"
+                  >
                     Message
                   </label>
                   <Field
@@ -177,6 +190,7 @@ export const Contact = () => {
                     name="message"
                     id="message"
                     component="textarea"
+                    for="message"
                   />
                   <ErrorMessage
                     name="message"

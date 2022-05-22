@@ -47,7 +47,9 @@ const Intro = () => {
           className="flex justify-center"
           duration={500}
         >
-          <Button title={intros.btn_name} />
+          <a className="flex justify-center ">
+            <Button title={intros.btn_name} />
+          </a>
         </Link>
       </div>
     </div>
