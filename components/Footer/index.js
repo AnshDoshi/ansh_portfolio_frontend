@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 export const Footer = () => {
   const [footers, setfooters] = useState([]);
 
   const fetchfooters = async () => {
-    const { data } = await axios.get(
-      "https://dry-cliffs-57784.herokuapp.com/api/footers"
-    );
+    const { data } = await axios.get(`${apiUrl}/api/footers`);
 
     setfooters(data[0]);
   };

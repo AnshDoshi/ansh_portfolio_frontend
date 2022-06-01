@@ -5,14 +5,13 @@ import Image from "next/image";
 // import { reducer as userReducer } from "../../usermodule";
 // import { reducer as questionReducer } from "../../questionAnsModule";
 // const proxy = require("http-proxy-middleware");
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const About = () => {
   const [abouts, setabouts] = useState([]);
 
   const fetchabouts = async () => {
-    const { data } = await axios.get(
-      "https://dry-cliffs-57784.herokuapp.com/api/abouts"
-    );
+    const { data } = await axios.get(`${apiUrl}/api/abouts`);
 
     setabouts(data[0]);
   };

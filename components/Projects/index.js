@@ -4,12 +4,12 @@ import Image from "next/image";
 
 import PortfolioBoxes from "../PortfolioBoxes";
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 const Projects = () => {
   const [projects, setprojects] = useState([]);
   const fetchprojects = async () => {
-    const { data } = await axios.get(
-      "https://dry-cliffs-57784.herokuapp.com/api/projects"
-    );
+    const { data } = await axios.get(`${apiUrl}/api/projects`);
 
     setprojects(data[0]);
   };

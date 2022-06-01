@@ -53,13 +53,13 @@ const validationSchema = Yup.object({
   message: Yup.string().required("Required..."),
 });
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 export const Contact = () => {
   const [contacts, setcontacts] = useState([]);
 
   const fetchcontacts = async () => {
-    const { data } = await axios.get(
-      "https://dry-cliffs-57784.herokuapp.com/api/contacts"
-    );
+    const { data } = await axios.get(`${apiUrl}/api/contacts`);
 
     setcontacts(data[0]);
   };

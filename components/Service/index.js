@@ -5,13 +5,13 @@ import axios from "axios";
 // import styles from "../../styles/Header.module.css";
 import ServiceBars from "../ServiceBars";
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 const Service = () => {
   const [services, setservices] = useState([]);
 
   const fetchservices = async () => {
-    const { data } = await axios.get(
-      "https://dry-cliffs-57784.herokuapp.com/api/services"
-    );
+    const { data } = await axios.get(`${apiUrl}/api/services`);
 
     setservices(data[0]);
   };

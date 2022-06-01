@@ -7,13 +7,13 @@ import Button from "../Button";
 import Image from "next/image";
 import styles from "./navbar.module.css";
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 function Navbar() {
   const [navs, setnavs] = useState([]);
 
   const fetchnavs = async () => {
-    const { data } = await axios.get(
-      "https://dry-cliffs-57784.herokuapp.com/api/navs"
-    );
+    const { data } = await axios.get(`${apiUrl}/api/navs`);
     setnavs(data[0]);
   };
 

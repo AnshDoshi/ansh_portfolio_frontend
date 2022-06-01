@@ -6,13 +6,13 @@ var ReactRotatingText = require("react-rotating-text");
 import { Link } from "react-scroll";
 import axios from "axios";
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 const Intro = () => {
   const [intros, setintros] = useState([]);
 
   const fetchintros = async () => {
-    const { data } = await axios.get(
-      "https://dry-cliffs-57784.herokuapp.com/api/intros"
-    );
+    const { data } = await axios.get(`${apiUrl}/api/intros`);
 
     setintros(data[0]);
   };
