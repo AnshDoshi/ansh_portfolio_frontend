@@ -50,7 +50,7 @@ function Navbar() {
                 >
                   <h1 className={styles.nav_name}>
                     {navs.logo}
-                    <span className={styles.nav_name_dot}>.</span>
+                    <span className={styles.nav_name_dot}>..</span>
                   </h1>
                 </Link>
               </div>
