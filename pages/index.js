@@ -23,34 +23,9 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 function App() {
   const [loading, setloading] = useState(false);
 
-  // useEffect(() => {
-  //   setloading(true);
-  //   setTimeout(() => {
-  //     setloading(false);
-  //   }, 1000);
-  // }, []);
   return (
     <div>
-      {/* {loading ? (
-        <div className="flex h-screen bg-gray-200 items-center justify-center">
-          <PacmanLoader size={25} color={"#1E90FF"} loading={loading} />
-        </div>
-      ) : (
-        <div>
-          <Navbar />
-
-          <Intro />
-          <About />
-          <Services />
-          <Projects />
-          <Contact />
-
-          <Footer />
-        </div>
-      )} */}
-
       <Head>
-        {/* <Meta /> */}
         <link
           rel="icon"
           href="https://res.cloudinary.com/dhoozs5nu/image/upload/v1653211812/ansh/icon-192x192_jikdwl.png"

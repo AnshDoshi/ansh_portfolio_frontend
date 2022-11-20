@@ -6,6 +6,8 @@ import Button from "../Button";
 import emailjs from "@emailjs/browser";
 import * as Yup from "yup";
 import axios from "axios";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const initialValues = {
   name: "",
@@ -85,13 +87,23 @@ export const Contact = () => {
   return (
     <div id="contact" name="contact" className="m-5 ">
       <div className="text-center pb-12">
-        <h1 className="font-bold  text-3xl  md:text-4xl lg:text-4xl font-heading text-gray-900">
-          {contacts.say} <span className="text-indigo-600">{contacts.hi}</span>
-        </h1>
+        {contacts?.say ? (
+          <>
+            <h1 className="font-bold  text-3xl  md:text-4xl lg:text-4xl font-heading text-gray-900">
+              {contacts.say}{" "}
+              <span className="text-indigo-600">{contacts.hi}</span>
+            </h1>
 
-        <h3 className="m-4 text-base text-xl font-bold text-indigo-600">
-          {contacts.quote}
-        </h3>
+            <h3 className="m-4 text-base text-xl font-bold text-indigo-600">
+              {contacts.quote}
+            </h3>
+          </>
+        ) : (
+          <div className="text-center m-2">
+            <Skeleton width={190} height={40} />
+            <Skeleton width={380} height={48} />
+          </div>
+        )}
       </div>
       <div className="flex  justify-center ">
         <Formik
@@ -203,7 +215,11 @@ export const Contact = () => {
 
               <div className="md:flex md:items-center">
                 <div className=" md:w-1/3">
-                  <Button type="submit" title={contacts.btn_name} />
+                  {contacts?.btn_name ? (
+                    <Button type="submit" title={contacts.btn_name} />
+                  ) : (
+                    <Skeleton width={70} height={50} />
+                  )}
                 </div>
                 <div className="md:w-2/3"></div>
               </div>
